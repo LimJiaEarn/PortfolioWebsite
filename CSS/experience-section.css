@@ -1,0 +1,73 @@
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS for timeline */
+.experience-section-timeline { 
+    position: relative; 
+} 
+  
+.experience-section-timeline-card { 
+    background: #e5e9f3; 
+    box-shadow: 0 0 5px rgba(191, 189, 189, 0.2); 
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px; 
+} 
+  
+
+.experience-section-timeline-card-right { 
+    text-align: left; 
+    position: relative; 
+    right: -205px; 
+    list-style: none; 
+} 
+  
+.experience-section-timeline-card-left { 
+    text-align: left; 
+    position: relative; 
+    left: -205px; 
+    list-style: none; 
+} 
+
+/* Adds the vertical line connecting the timeline cards */
+.experience-section-timeline::after { 
+    content: ""; 
+    position: absolute; 
+    width: 6px; 
+    background-color: black; 
+    top: 28px; 
+    bottom: 75px; 
+    left: 50%; 
+    margin-left: -3px; 
+} 
+  
+/* Adds circular shapes for each timeline checkpoint */
+.dotRight::after { 
+    content: ""; 
+    position: absolute; 
+    width: 22px; 
+    height: 22px; 
+    left: -30px; 
+    background-color: white; 
+    border: 4px dashed #559cff; 
+    top: 20px; 
+    border-radius: 50%; 
+    z-index: 1; 
+} 
+  
+.dotLeft::after { 
+    content: ""; 
+    position: absolute; 
+    width: 22px; 
+    height: 22px; 
+    right: -30px; 
+    background-color: white; 
+    border: 4px dashed #559cff; 
+    top: 20px; 
+    border-radius: 50%; 
+    z-index: 1; 
+}
