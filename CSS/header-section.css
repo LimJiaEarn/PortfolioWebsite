@@ -1,0 +1,22 @@
+
+
+.header-section-banner {
+    position: relative;
+    display: inline-block;
+}
+
+.header-section-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header-section-overlayText {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+}

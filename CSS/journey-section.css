@@ -1,0 +1,99 @@
+
+.journey-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS for timeline */
+.journey-section-timeline { 
+    position: relative; 
+} 
+  
+.journey-section-timeline-card-left h3, h4 {
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.journey-section-timeline-card-right h3, h4 {
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.journey-section-timeline-card-left p,
+.journey-section-timeline-card-right p {
+    padding: 5px;
+    line-height: 22px;
+    margin-top: 15px;
+    padding-top: 0px;
+}
+
+.journey-section-timeline-card-left { 
+    background: #e5e9f3; 
+    box-shadow: 0 0 5px rgba(191, 189, 189, 0.2); 
+    border-radius: 10px; 
+    max-width: 350px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 13px;
+    text-align: left; 
+    position: relative; 
+    left: -205px; 
+    list-style: none; 
+} 
+
+.journey-section-timeline-card-right { 
+    background: #e5e9f3; 
+    box-shadow: 0 0 5px rgba(191, 189, 189, 0.2); 
+    border-radius: 10px; 
+    max-width: 350px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 13px;
+    text-align: left; 
+    position: relative; 
+    right: -205px; 
+    list-style: none; 
+} 
+  
+
+
+/* Adds the vertical line connecting the timeline cards */
+.journey-section-timeline::after { 
+    content: ""; 
+    position: absolute; 
+    width: 6px; 
+    background-color: rgb(6, 177, 100); 
+    top: 10px; 
+    bottom: 10px; 
+    left: 50%; /* Centralises the timeline */
+    margin-left: -3px; 
+} 
+  
+/* Adds circular shapes for each timeline checkpoint */
+.journey-section-timeline-card-right::after { 
+    content: ""; 
+    position: absolute; 
+    width: 22px; 
+    height: 22px; 
+    left: -32px; 
+    background-color: rgb(159, 227, 176);
+    border: 4px dashed #2b2c2c; 
+    top: 20px; 
+    border-radius: 50%; 
+    z-index: 1; 
+} 
+  
+.journey-section-timeline-card-left::after { 
+    content: ""; 
+    position: absolute; 
+    width: 22px; 
+    height: 22px; 
+    right: -32px; 
+    background-color: rgb(159, 227, 176); 
+    border: 4px dashed #2b2c2c; 
+    top: 20px; 
+    border-radius: 50%; 
+    z-index: 1; 
+}
