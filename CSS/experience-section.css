@@ -1,0 +1,36 @@
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8% 5% 8%;
+}
+
+.experience-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.experience-section-companySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-section-companyLogo {
+    width: 90%;
+    background: white;
+    border-radius: 5%;
+}
+
+.experience-section-companyName {
+    text-align: center;
+}
+
+.experience-section-description-title {
+    margin: 0px;
+}

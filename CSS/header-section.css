@@ -13,10 +13,23 @@
 
 .header-section-overlayText {
     position: absolute;
-    top: 20%;
-    left: 18%;
-    text-align: left;
+    top: 10%;
+    left: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header-section-overlayText-1 {
     color: white;
-    font-weight: bold;
-    font-size: 29px;
+    margin: 0px 0px 10px 0px;
+    /* [Shorthand] font: font-style, font-weight, font-size, font-family */
+    font: italic 300 29px "Roboto", sans-serif;
+}
+
+.header-section-overlayText-2 {
+    color: white;
+    margin: 0px;
+    font: bold 57px "Roboto", sans-serif;
 }

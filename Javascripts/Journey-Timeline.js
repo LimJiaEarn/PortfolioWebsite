@@ -27,12 +27,10 @@ const timelineArray = [
         }
 ]; 
   
-function gfg() { 
+function JourneyTimeline() { 
 
     timelineArray.map((e, i) => { 
 
-
-        
         const yearElement = document.createElement("h3"); 
         yearElement.innerText = e.year; 
 
@@ -62,4 +60,4 @@ function gfg() {
         }); 
     } 
 
-gfg();
+JourneyTimeline();
