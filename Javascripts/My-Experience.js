@@ -43,21 +43,16 @@ function MyExperience() {
         companyLogoElement.src = e.companyLogoPath; 
         companyLogoElement.classList = "experience-section-companyLogo";
 
-        const companyNameElement = document.createElement("p");
-        companyNameElement.innerText = e.companyName;
-        companyNameElement.classList = "experience-section-companyName";
-
         const companySectionInsertElement = document.createElement("div");
         companySectionInsertElement.classList = "experience-section-companySection";
         companySectionInsertElement.appendChild(companyLogoElement);
-        companySectionInsertElement.appendChild(companyNameElement);
 
         const CompanyElement = document.querySelector(".experience-section-grid");
         CompanyElement.appendChild(companySectionInsertElement);
 
 
         const companyTitleElement = document.createElement("p");
-        companyTitleElement.innerText = e.title;
+        companyTitleElement.innerText = e.title + ", " + e.companyName;
         companyTitleElement.classList = "experience-section-description-title";
 
         const workDurationElement = document.createElement("p");

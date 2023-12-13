@@ -4,13 +4,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 8% 5% 8%;
+    padding: 35px 8% 5% 8%;
+    background-color: white;
 }
+
+/* Credit from: https://verpex.com/blog/website-tips/css-shapes-the-ribbon */
+.experience-section-header {
+
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    margin: 0px;
+
+    --s: 70px; /* the ribbon size */
+    --d: 10px; /* the depth */
+    --c: 10px; /* the cutout part */
+    /* update one variable a time and you will understand what it does */
+    
+    padding: 0 calc(var(--s) + var(--d)) var(--d);
+    background:
+      conic-gradient(at left  var(--s) bottom var(--d),
+       #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% no-repeat,
+      conic-gradient(at right var(--s) bottom var(--d),
+       #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% no-repeat;
+
+    clip-path: polygon(0 var(--d),
+                        var(--s) var(--d),var(--s) 0,
+                        calc(100% - var(--s)) 0,
+                        calc(100% - var(--s)) var(--d),
+                        100% var(--d),
+                        calc(100% - var(--c)) calc(50% + var(--d)/2),
+                        100% 100%,
+                        calc(100% - var(--s) - var(--d)) 100%,
+                        calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),
+                        calc(var(--s) + var(--d)) calc(100% - var(--d)),
+                        calc(var(--s) + var(--d)) 100%,
+                        0 100%,
+                        var(--c) calc(50% + var(--d)/2));
+    
+    background-color: #463aef; /* the main color */
+    /* width: fit-content; you may need to use this in your code if the element is full width */
+  }
 
 .experience-section-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    row-gap: 20px;
+    row-gap: 24px;
+    column-gap: 20px;
+    margin-top: 30px;
     align-items: start;
 }
 
@@ -22,15 +64,32 @@
 }
 
 .experience-section-companyLogo {
+    object-fit: cover;
     width: 90%;
+    min-width: 150px;
+    max-width: 250px;
+    height: 90%;
+    min-height: 150px;
+    max-height: 200px;
     background: white;
     border-radius: 5%;
 }
 
-.experience-section-companyName {
-    text-align: center;
-}
-
 .experience-section-description-title {
     margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #37c;
+}
+
+
+.experience-section-description-workDuration {
+    margin: 2px;
+    font-style: italic;
+    font-size: 17px;
+    color: green;
+}
+
+.experience-section-description-responsibilities {
+    padding-left: 24px;
 }
