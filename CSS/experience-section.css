@@ -5,46 +5,17 @@
     justify-content: center;
     align-items: center;
     padding: 35px 8% 5% 8%;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
 }
 
 /* Credit from: https://verpex.com/blog/website-tips/css-shapes-the-ribbon */
 .experience-section-header {
-
-    color: white;
+    color: rgb(68, 71, 252);
     font-weight: bold;
     font-size: 34px;
     text-align: center;
     margin: 0px;
 
-    --s: 70px; /* the ribbon size */
-    --d: 10px; /* the depth */
-    --c: 10px; /* the cutout part */
-    /* update one variable a time and you will understand what it does */
-    
-    padding: 0 calc(var(--s) + var(--d)) var(--d);
-    background:
-      conic-gradient(at left  var(--s) bottom var(--d),
-       #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% no-repeat,
-      conic-gradient(at right var(--s) bottom var(--d),
-       #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% no-repeat;
-
-    clip-path: polygon(0 var(--d),
-                        var(--s) var(--d),var(--s) 0,
-                        calc(100% - var(--s)) 0,
-                        calc(100% - var(--s)) var(--d),
-                        100% var(--d),
-                        calc(100% - var(--c)) calc(50% + var(--d)/2),
-                        100% 100%,
-                        calc(100% - var(--s) - var(--d)) 100%,
-                        calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),
-                        calc(var(--s) + var(--d)) calc(100% - var(--d)),
-                        calc(var(--s) + var(--d)) 100%,
-                        0 100%,
-                        var(--c) calc(50% + var(--d)/2));
-    
-    background-color: #463aef; /* the main color */
-    /* width: fit-content; you may need to use this in your code if the element is full width */
   }
 
 .experience-section-grid {
@@ -64,15 +35,12 @@
 }
 
 .experience-section-companyLogo {
-    object-fit: cover;
-    width: 90%;
-    min-width: 150px;
-    max-width: 250px;
-    height: 90%;
-    min-height: 150px;
-    max-height: 200px;
-    background: white;
-    border-radius: 5%;
+    width: 200px; /* Set fixed width */
+    height: 140px; /* Set fixed height */
+    object-fit: scale-down;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .experience-section-description-title {

@@ -22,7 +22,7 @@ const ExperienceArray = [
         companyName: "Mathnasium",
         title: "Math Teacher",
         workingDuration: "May 2022 - Aug 2022",
-        responsibilities:  ["Assessed and taught over 50 students from\nGrade 4 - 9",
+        responsibilities:  ["Assessed and taught over 50 students from Grade 4 - 9",
                         "Presented learning and guidance through Mathnasium Method such as Socratic Questioning"]
     },
     { 

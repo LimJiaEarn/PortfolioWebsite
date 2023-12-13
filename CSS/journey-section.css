@@ -6,9 +6,20 @@
     justify-content: center;
 }
 
+.journey-section-header {
+    padding-top: 20px;
+    color: rgb(68, 71, 252);
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    margin: 0px;
+}
+
 /* CSS for timeline */
 .journey-section-timeline { 
-    position: relative; 
+    position: relative;
+    margin-top: 20px; 
+    padding-top: 20px;
 } 
   
 .journey-section-timeline-card-left h3, h4 {
