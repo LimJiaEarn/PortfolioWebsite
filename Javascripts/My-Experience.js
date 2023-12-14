@@ -37,7 +37,7 @@ const ExperienceArray = [
 
 function MyExperience() { 
 
-    ExperienceArray.map((e, i) => { 
+    ExperienceArray.map((e) => { 
 
         const companyLogoElement = document.createElement("img"); 
         companyLogoElement.src = e.companyLogoPath; 
