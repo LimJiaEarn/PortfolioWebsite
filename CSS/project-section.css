@@ -1,0 +1,27 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 8% 5% 8%;
+/* background-image: linear-gradient(to top, #fff1eb 10%, #ace0f9 100%); */
+    background-image: linear-gradient(to top, #d9afd9 0%, #fff1eb 100%);
+
+}
+
+.project-section-header {
+    color: rgb(156, 41, 209);
+    font-weight: 800;
+    font-size: 34px;
+    text-align: center;
+    margin: 0px;
+    font-family: Merriweather Sans;
+}
+
+.project-section-container {
+
+    padding-bottom: 1000px;
+
+
+
+}

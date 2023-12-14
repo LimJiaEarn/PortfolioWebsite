@@ -4,15 +4,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #8a5ed2 0%, #d9afd9 100%);
 }
 
 .journey-section-header {
-    padding-top: 20px;
-    color: rgb(68, 71, 252);
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
     font-size: 34px;
     text-align: center;
-    margin: 0px;
+    margin: 40px 0px 0px 0px;
+    font-family: Merriweather Sans;
 }
 
 /* CSS for timeline */
@@ -41,7 +42,7 @@
 }
 
 .journey-section-timeline-card-left { 
-    background: #e5e9f3; 
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     box-shadow: 0 0 5px rgba(191, 189, 189, 0.2); 
     border-radius: 10px; 
     max-width: 350px;
@@ -55,7 +56,7 @@
 } 
 
 .journey-section-timeline-card-right { 
-    background: #e5e9f3; 
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     box-shadow: 0 0 5px rgba(191, 189, 189, 0.2); 
     border-radius: 10px; 
     max-width: 350px;

@@ -5,17 +5,16 @@
     justify-content: center;
     align-items: center;
     padding: 35px 8% 5% 8%;
-    background-color: rgb(245, 245, 245);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
-/* Credit from: https://verpex.com/blog/website-tips/css-shapes-the-ribbon */
 .experience-section-header {
-    color: rgb(68, 71, 252);
-    font-weight: bold;
+    color: rgb(37, 91, 152);
+    font-weight: 800;
     font-size: 34px;
     text-align: center;
     margin: 0px;
-
+    font-family: Merriweather Sans;
   }
 
 .experience-section-grid {
@@ -35,8 +34,8 @@
 }
 
 .experience-section-companyLogo {
-    width: 200px; /* Set fixed width */
-    height: 140px; /* Set fixed height */
+    width: 200px;
+    height: 140px;
     object-fit: scale-down;
     background-color: white;
     border-radius: 10%;
@@ -60,4 +59,5 @@
 
 .experience-section-description-responsibilities {
     padding-left: 24px;
+    color:rgb(38, 38, 38);
 }
