@@ -2,30 +2,31 @@
 const ProjectsArray = [ 
     { 
         imagePath: "Images/Project_1T.jpg", 
-        companyName: "British America Tobacco"
+        companyName: "Retirement Planner"
     }, 
     { 
         imagePath: "Images/Project_2T.jpg", 
-        companyName: "Aquarius Soft"
+        companyName: "Macro Enhanced Excels"
     },
     { 
         imagePath: "Images/Project_3T.jpg", 
-        companyName: "Mathnasium"
+        companyName: "Personal Finance Calendar"
     },
     { 
         imagePath: "Images/Project_4T.jpg", 
-        companyName: "Mindflex"
+        companyName: "Disk Based Frequent Item Miner"
     },
     { 
         imagePath: "Images/Project_1T.jpg", 
-        companyName: "Mindflex"
-    },    { 
-        imagePath: "Images/Project_2T.jpg", 
-        companyName: "Mindflex"
+        companyName: "Career Navigator"
     }
 ]; 
 
+const GalleryElement = document.querySelector(".project-section-gallery");
+
 function MyProjects() { 
+
+    
 
     ProjectsArray.map((e) => { 
 
@@ -34,13 +35,44 @@ function MyProjects() {
         imageElement.classList = "project-section-gallery-element-image";
 
         const GalleryItemElement = document.createElement("div");
-        GalleryItemElement.classList = "project-section-gallery-element";
+        GalleryItemElement.classList = "project-section-gallery-element expand-on-hover";
 
         GalleryItemElement.appendChild(imageElement);
 
-        const GalleryElement = document.querySelector(".project-section-gallery");
+        
         GalleryElement.appendChild(GalleryItemElement);
         }); 
-    } 
+ 
+
+    function handleScroll(event) {
+        console.log(event.deltaY);
+        GalleryElement.scrollLeft += event.deltaY;
+
+    }
+    
+    GalleryElement.onmouseenter = () => {
+        console.log("Enter");
+        GalleryElement.addEventListener('wheel', handleScroll);
+    };
+    
+    GalleryElement.onmouseleave = () => {
+        console.log("Left");
+        GalleryElement.removeEventListener('wheel', handleScroll);
+
+    };
+
+    const ScrollLeftButtonElement = document.querySelector(".project-section-gallery-buttonLeft");
+    ScrollLeftButtonElement.addEventListener("onclick", galleryScrollLeft);
+
+
+
+}
+
+function galleryScroll(scrollLen) {
+    GalleryElement.scrollLeft += scrollLen;
+}
+
 
 MyProjects();
+
+

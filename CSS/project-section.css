@@ -25,11 +25,13 @@
     align-items: center;
 }
 
-.project-section-gallery-button {
+.project-section-gallery-buttonLeft,
+.project-section-gallery-buttonRight {
     background-color: white;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    transition: transform 0.15s;
 }
 
 .project-section-gallery {
@@ -40,6 +42,13 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* hide scrollbar for Firefox */
+}
+
+.project-section-gallery::-webkit-scrollbar {
+    display: none;
 }
 
 .project-section-gallery-element {
@@ -54,5 +63,20 @@
     background-color: white;
     border-radius: 10%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.15s;
 }
 
+
+/* Hover Effects */
+
+.project-section-gallery-buttonLeft:hover ,
+.project-section-gallery-buttonRight:hover  {
+    transform: scale(1.12);
+}
+
+.expand-on-hover:hover {
+    .project-section-gallery-element-image{
+        transform: scale(1.05);
+
+    }
+}
