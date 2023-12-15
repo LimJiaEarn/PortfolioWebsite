@@ -8,12 +8,10 @@
 }
 
 .journey-section-header {
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-    font-size: 34px;
+    color: rgb(156, 41, 209);
+    font: 800 2.2rem Merriweather Sans;
     text-align: center;
-    margin: 40px 0px 0px 0px;
-    font-family: Merriweather Sans;
+    margin: 0;
 }
 
 /* CSS for timeline */

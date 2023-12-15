@@ -9,11 +9,10 @@
 }
 
 .project-section-header {
-    color: rgb(156, 41, 209);
-    font-weight: 800;
-    font-size: 34px;
-    margin: 0px 0px 15px 0px;
-    font-family: Merriweather Sans;
+    color: rgb(237, 85, 222);
+    font: 800 2.2rem Merriweather Sans;
+    text-align: center;
+    margin: 0;
 }
 
 .project-section-body {

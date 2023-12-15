@@ -23,13 +23,13 @@
 
 .header-section-overlayText-1 {
     color: white;
-    margin: 0px 0px 10px 0px;
+    margin: 0rem 0rem 1rem 0rem;
     /* [Shorthand] font: font-style, font-weight, font-size, font-family */
-    font: italic 300 29px "Roboto", sans-serif;
+    font: italic 300 3rem "Roboto", sans-serif;
 }
 
 .header-section-overlayText-2 {
     color: white;
-    margin: 0px;
-    font: bold 57px "Roboto", sans-serif;
+    margin: 0em;
+    font: bold 4rem "Roboto", sans-serif;
 }

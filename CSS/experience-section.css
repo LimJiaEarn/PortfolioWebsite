@@ -4,17 +4,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 35px 8% 5% 8%;
+    padding: 25px 10px 25px 10px;
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .experience-section-header {
     color: rgb(37, 91, 152);
-    font-weight: 800;
-    font-size: 34px;
+    font: 800 2.2rem Merriweather Sans;
     text-align: center;
-    margin: 0px;
-    font-family: Merriweather Sans;
+    margin: 0;
   }
 
 .experience-section-grid {
@@ -45,7 +43,7 @@
 .experience-section-description-title {
     margin: 0px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #37c;
 }
 
@@ -53,7 +51,7 @@
 .experience-section-description-workDuration {
     margin: 2px;
     font-style: italic;
-    font-size: 17px;
+    font-size: 1rem;
     color: green;
 }
 
