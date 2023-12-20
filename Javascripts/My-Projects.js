@@ -1,39 +1,39 @@
 
 const ProjectsArray = [ 
     { 
-        imagePath: "Images/Project_1T.jpg", 
+        imagePath: "Images/Project_1.png", 
         projectName: "Retirement Planner",
         projectDescription: "A tool to take control of you or your family's finances!",
-        techStack: ["ReactJS, Bootstrap, Tailwind, Firebase"]
+        techStack: ["ReactJS", "Bootstrap", "Tailwind", "Firebase"]
     }, 
     { 
-        imagePath: "Images/Project_2T.jpg", 
+        imagePath: "Images/Project_2.png", 
         projectName: "Macro Enhanced Excels",
-        projectDescription: "Supercharge your mundane excel workflows!",
+        projectDescription: "Automate mundane excel workflows with VBA!",
         techStack: ["VBA", "MS Excel"]
     },
     { 
-        imagePath: "Images/Project_3T.jpg", 
+        imagePath: "Images/Project_3.jpg", 
         projectName: "Personal Finance Calendar",
         projectDescription: "One file to track all your finances & more!",
         techStack: ["Python", "Openpyxl"]
     },
     { 
-        imagePath: "Images/Project_4T.jpg", 
+        imagePath: "Images/Project_4.png", 
         projectName: "Disk Based Frequent Itemset Miner",
         projectDescription: "Mine frequent itemsets no matter the size of your main memory!",
         techStack: ["Python"]
     },
     { 
-        imagePath: "Images/Project_1T.jpg", 
+        imagePath: "Images/Project_5.png", 
         projectName: "Trending YT Videos Predictor",
         projectDescription: "Trained on real YT data using state of the art algorithms such as Random Forest!",
         techStack: ["Python", "Pandas", "Scikit-Learn"]
     },
     { 
-        imagePath: "Images/Project_2T.jpg", 
+        imagePath: "Images/Project_6.png", 
         projectName: "Career Navigator",
-        projectDescription: "Your digital companion to empower your tech career!",
+        projectDescription: "Your digital companion to supercharge your tech career!",
         techStack: ["ReactJS", "Bootstrap"]
     }
 ]; 
@@ -62,6 +62,13 @@ function MyProjects() {
         descElement.innerText = e.projectDescription;
         descElement.classList = "project-section-gallery-element-desc";
 
+        const techStackGridElement = document.createElement("div");
+        techStackGridElement.classList = "project-section-gallery-element-techGrid";
+
+        const techStackTitleElement = document.createElement("div");
+        techStackTitleElement.innerText = "Tech Stack:";
+        techStackTitleElement.classList = "project-section-gallery-element-techTitle";
+
         const techStackElement = document.createElement("ul");
 
         e.techStack.forEach((e2) => {
@@ -72,14 +79,14 @@ function MyProjects() {
             techStackElement.appendChild(techP);
         })
 
+        techStackGridElement.appendChild(techStackTitleElement);
+        techStackGridElement.appendChild(techStackElement);      
+
         GalleryItemElement.appendChild(titleElement);
         GalleryItemElement.appendChild(descElement);
-        GalleryItemElement.appendChild(techStackElement);        
-        
+        GalleryItemElement.appendChild(techStackGridElement);
+
         GalleryElement.appendChild(GalleryItemElement);
-
-
-
 
         }); 
  

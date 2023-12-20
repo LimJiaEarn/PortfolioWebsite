@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px 10px 25px 10px;
+    padding: 25px 10px 50px 10px;
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
@@ -12,7 +12,7 @@
     color: rgb(37, 91, 152);
     font: 800 2.2rem Merriweather Sans;
     text-align: center;
-    margin: 0;
+    margin: 0px 0px 50px 0px;
   }
 
 .experience-section-grid {
@@ -20,7 +20,6 @@
     grid-template-columns: 1fr 2fr;
     row-gap: 24px;
     column-gap: 20px;
-    margin-top: 30px;
     align-items: start;
 }
 
@@ -51,6 +50,7 @@
 .experience-section-description-workDuration {
     margin: 2px;
     font-style: italic;
+    font-weight: bold;
     font-size: 1rem;
     color: green;
 }

@@ -3,16 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
     background-image: linear-gradient(to top, #d9afd9 0%, #fff1eb 100%);
 
 }
 
 .project-section-header {
-    color: rgb(237, 85, 222);
+    color: rgb(232, 102, 219);
     font: 800 2.2rem Merriweather Sans;
     text-align: center;
-    margin: 0;
+    margin: 0px 0px 30px 0px;
 }
 
 .project-section-body {
@@ -35,9 +35,9 @@
 }
 
 .project-section-gallery {
-    max-width: 660px;
+    max-width: 8000px;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 12px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: column;
     overflow-x: auto;
@@ -48,9 +48,9 @@
     scrollbar-width: none;  /* hide scrollbar for Firefox */
     padding: 0px 5px 0px 5px;
 
-    @media screen and (width > 1000px){
+    @media screen and (width > 1220px){
         grid-template-columns: repeat(3, 1fr);
-        max-width: 1000px;
+        max-width: 1040px;
     }
 
 }
@@ -66,19 +66,21 @@
     margin: 0px;
     scroll-snap-align: start;
     width: 320px;
-    height: 400px;
+    height: 450px;
     padding: 5px 10px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(240, 99, 233, 0.15);
+    border-radius: 10%;
     transition: transform 0.15s;
 }
 
 .project-section-gallery-element-image {
-    width: 200px;
+    width: 250px;
     height: 200px;
     margin: 0px;
-    object-fit: scale-down;
+    object-fit: cover;
     background-color: white;
-    border-radius: 10%;
+    border: 1px solid #aaba33;
+    border-radius: 5%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -86,17 +88,35 @@
     margin-top: 8px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: rgb(83, 0, 101);
 }
 
 .project-section-gallery-element-desc {
     margin-top: 8px;
     font-size: 1rem;
     font-weight: italic;
-    
+    color: rgb(123, 0, 150);
+}
+
+.project-section-gallery-element-techGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.project-section-gallery-element-techTitle {
+    margin: 12px 0px 0px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(9, 95, 9);
 }
 
 .project-section-gallery-tech {
+    margin: 4px 0px 0px 0px;
     list-style-type: square;
+    color: rgb(1, 139, 1);
 }
 
 

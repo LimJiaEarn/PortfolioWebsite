@@ -1,6 +1,7 @@
 
 body { 
-    background: rgb(240, 240, 240);
+    background-color: #052534;
+    background-image: url("../Images/background.jpg");
     margin: 0 0;
     font-family: Roboto;
 } 
