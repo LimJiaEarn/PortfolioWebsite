@@ -50,10 +50,6 @@ function MyProjects() {
         imageElement.src = e.imagePath;
         imageElement.classList = "project-section-gallery-element-image";
 
-        const GalleryItemElement = document.createElement("div");
-        GalleryItemElement.classList = "project-section-gallery-element expand-on-hover";
-        GalleryItemElement.appendChild(imageElement);
-
         const titleElement = document.createElement("div");
         titleElement.innerText = e.projectName;
         titleElement.classList = "project-section-gallery-element-title";
@@ -82,6 +78,10 @@ function MyProjects() {
         techStackGridElement.appendChild(techStackTitleElement);
         techStackGridElement.appendChild(techStackElement);      
 
+
+        const GalleryItemElement = document.createElement("div");
+        GalleryItemElement.classList = "project-section-gallery-element expand-on-hover";
+        GalleryItemElement.appendChild(imageElement);
         GalleryItemElement.appendChild(titleElement);
         GalleryItemElement.appendChild(descElement);
         GalleryItemElement.appendChild(techStackGridElement);

@@ -46,7 +46,7 @@
     scroll-behavior: smooth;
     -ms-overflow-style: none;  /* hide scrollbar for IE and Edge */
     scrollbar-width: none;  /* hide scrollbar for Firefox */
-    padding: 0px 5px 0px 5px;
+    padding: 5px 5px 5px 5px;
 
     @media screen and (width > 1220px){
         grid-template-columns: repeat(3, 1fr);
