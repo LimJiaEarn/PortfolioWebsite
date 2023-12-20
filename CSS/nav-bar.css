@@ -1,0 +1,33 @@
+.primary-navigation {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    background: rgb(73, 186, 186);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.primary-navigation-texts {
+    position: relative;
+    margin: 0 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    background-image: linear-gradient(#ffffff 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.2s,
+      background-position 0s 0.2s; /*change after the size immediately*/
+}
+
+.primary-navigation-texts:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+

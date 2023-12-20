@@ -3,6 +3,7 @@
     position: flex;
     display: inline-block;
     padding: 40px 0px 40px 0px;
+    margin: 0px;
     width: 100%;
     justify-content: center;
     align-items: center;
