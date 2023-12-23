@@ -1,13 +1,20 @@
 
 .footer-section {
     background: lightblue;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding: 20px 5px;
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    flex-direction: column;
+    gap: 5px;
     justify-content: center;
+    align-items: center;
 
+}
+
+.footer-section-desc {
+    max-width: 850px;
+    text-align: center;
+    color: rgb(24, 0, 104);
+    font-size: 1.05rem;
 }
 
 .footer-section-socials {
@@ -17,11 +24,9 @@
 }
 
 .footer-section-socials-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .footer-section-socials-icons-img {

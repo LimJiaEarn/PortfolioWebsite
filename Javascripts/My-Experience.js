@@ -28,7 +28,7 @@ const ExperienceArray = [
     { 
         companyLogoPath: "Images/Mindflex_Logo.webp",
         companyName: "Mindflex",
-        title: "Math Tutor",
+        title: "Math & Computing Tutor",
         workingDuration: "Aug 2021 - Dec 2023",
         responsibilities:  ["Tutored students taking PSLE, O levels, A levels",
                         "Tailored conceptual knowledge to meet each student's learning style through my personal library of comprehensive notes and practice papers"]

@@ -16,7 +16,7 @@ const ProjectsArray = [
         imagePath: "Images/Project_3.jpg", 
         projectName: "Personal Finance Calendar",
         projectDescription: "One file to track all your finances & more!",
-        techStack: ["Python", "Openpyxl"]
+        techStack: ["Python", "Openpyxl", "MS Excel"]
     },
     { 
         imagePath: "Images/Project_4.png", 

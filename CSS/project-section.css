@@ -27,7 +27,7 @@
 
 .project-section-gallery-buttonLeft,
 .project-section-gallery-buttonRight {
-    background-color: white;
+    background-color: rgb(255, 231, 255);
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
@@ -67,8 +67,9 @@
     scroll-snap-align: start;
     width: 320px;
     height: 450px;
-    padding: 5px 10px;
-    background-color: rgba(248, 92, 211, 0.25);
+    padding: 15px 10px;
+    background-color: rgba(248, 92, 211, 0.08);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10%;
     transition: transform 0.15s;
 }
@@ -95,7 +96,7 @@
     margin-top: 8px;
     font-size: 1rem;
     font-weight: italic;
-    color: rgb(123, 0, 150);
+    color: rgb(103, 58, 113);
 }
 
 .project-section-gallery-element-techGrid {
@@ -128,7 +129,6 @@
 }
 
 .expand-on-hover:hover {
-    
     transform: scale(1.02);
 
 }
