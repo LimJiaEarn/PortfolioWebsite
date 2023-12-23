@@ -32,8 +32,10 @@
 .footer-section-socials-icons-img {
     height: 40px;
     width: 40px;
+    transition: transform 0.15s;
 }
 
 .footer-section-socials-icons-img:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
